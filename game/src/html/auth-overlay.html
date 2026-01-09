@@ -1,0 +1,89 @@
+<!-- ============================================
+     AUTH OVERLAY - Login/Anmeldung
+     Wird in index.html eingebunden
+     ============================================ -->
+
+<!-- Auth Overlay -->
+<div id="auth-overlay" class="auth-overlay">
+    
+    <!-- Animierte Hintergrund-Linien (ÖPNV-Theme) -->
+    <div class="auth-bg-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    
+    <!-- Login Container -->
+    <div class="auth-container">
+        
+        <!-- Header mit Logo -->
+        <div class="auth-header">
+            <div class="auth-logo">
+                <div class="auth-logo-icon">🚇</div>
+                <div class="auth-logo-text">Transit<span>Builder</span></div>
+            </div>
+            <p class="auth-subtitle">Baue dein eigenes ÖPNV-Netzwerk</p>
+        </div>
+        
+        <!-- Login Form -->
+        <form id="auth-form" class="auth-form">
+            
+            <!-- Email -->
+            <div class="auth-input-group">
+                <label for="auth-email">E-Mail</label>
+                <input 
+                    type="email" 
+                    id="auth-email" 
+                    name="email" 
+                    placeholder="deine@email.de"
+                    autocomplete="email"
+                    disabled
+                >
+            </div>
+            
+            <!-- Passwort -->
+            <div class="auth-input-group">
+                <label for="auth-password">Passwort</label>
+                <input 
+                    type="password" 
+                    id="auth-password" 
+                    name="password" 
+                    placeholder="••••••••"
+                    autocomplete="current-password"
+                    disabled
+                >
+            </div>
+            
+            <!-- Login Button (deaktiviert) -->
+            <button type="submit" id="auth-login-btn" class="auth-btn auth-btn-primary" disabled>
+                <span>🔒</span>
+                Anmelden (Bald verfügbar)
+            </button>
+            
+        </form>
+        
+        <!-- Divider -->
+        <div class="auth-divider">
+            <span>oder</span>
+        </div>
+        
+        <!-- Gast-Button -->
+        <button id="auth-guest-btn" class="auth-btn auth-btn-guest">
+            <span>👤</span>
+            Als Gast spielen
+        </button>
+        
+        <!-- Footer -->
+        <div class="auth-footer">
+            <p>Noch kein Konto? <a href="#">Registrierung bald verfügbar</a></p>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Gast-Badge (wird nach Gast-Login angezeigt) -->
+<div id="guest-badge" class="guest-badge">
+    <span class="icon">👤</span>
+    <span>Gastmodus</span>
+</div>
