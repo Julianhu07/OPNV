@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap - TransitBuilder</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="roadmap.css">
+</head>
+<body>
+    <!-- ============================================
+         HEADER / NAVIGATION
+         ============================================ -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">🚇</span>
+                <span class="logo-text">TransitBuilder</span>
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-label="Menü öffnen">
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../" class="nav-link">Home</a></li>
+                    <li><a href="../roadmap/" class="nav-link active">Roadmap</a></li>
+                    <li><a href="../changelog/" class="nav-link">Changelog</a></li>
+                    <li><a href="../game/" class="nav-link nav-btn">Jetzt spielen</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="roadmap-page">
+        <!-- ============================================
+             ROADMAP HERO
+             ============================================ -->
+        <section class="roadmap-hero">
+            <div class="container">
+                <h1 class="page-title">Entwicklungs-Roadmap</h1>
+                <p class="page-subtitle">Verfolge den Fortschritt von TransitBuilder – von der ersten Idee bis zum fertigen Spiel</p>
+                
+                <!-- Legende -->
+                <div class="roadmap-legend">
+                    <div class="legend-item">
+                        <span class="legend-badge legend-done"></span>
+                        <span>Fertig</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-badge legend-wip"></span>
+                        <span>In Arbeit</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-badge legend-planned"></span>
+                        <span>Geplant</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             ROADMAP TIMELINE
+             ============================================ -->
+        <section class="roadmap-timeline">
+            <div class="container">
+                
+                <!-- ========== PHASE 1 ========== -->
+                <div class="roadmap-phase" data-phase="1">
+                    <div class="phase-header">
+                        <div class="phase-number">Phase 1</div>
+                        <h2 class="phase-title">Grundlagen & Prototyp</h2>
+                        <span class="phase-status phase-wip">In Arbeit</span>
+                        <p class="phase-description">Die Basis des Spiels – Kartenintegration, grundlegende UI und erste spielbare Version</p>
+                    </div>
+                    
+                    <div class="phase-features">
+                        <!-- Feature Spalte 1 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">🗺️ Karten-System</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">OpenStreetMap Integration</span>
+                                </li>
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Zoom & Pan Navigation</span>
+                                </li>
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Stadtauswahl-Menü</span>
+                                </li>
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Kartenebenen (Straßen, Gebäude)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Feature Spalte 2 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">🎮 Benutzeroberfläche</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Hauptmenü</span>
+                                </li>
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">In-Game HUD</span>
+                                </li>
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Werkzeugleiste</span>
+                                </li>
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Responsive Design</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Feature Spalte 3 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">💾 Technische Basis</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item done">
+                                    <span class="feature-check">✓</span>
+                                    <span class="feature-name">Projektstruktur</span>
+                                </li>
+                                <li class="feature-item done">
+                                    <span class="feature-check">✓</span>
+                                    <span class="feature-name">Lokaler Speicherstand</span>
+                                </li>
+                                <li class="feature-item done">
+                                    <span class="feature-check">✓</span>
+                                    <span class="feature-name">Browser-Kompatibilität</span>
+                                </li>
+                                <li class="feature-item done">
+                                    <span class="feature-check">✓</span>
+                                    <span class="feature-name">Performance-Optimierung</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== PHASE 2 ========== -->
+                <div class="roadmap-phase" data-phase="2">
+                    <div class="phase-header">
+                        <div class="phase-number">Phase 2</div>
+                        <h2 class="phase-title">Verkehrsmittel & Linien</h2>
+                        <span class="phase-status phase-wip">In Arbeit</span>
+                        <p class="phase-description">Einführung verschiedener Verkehrsmittel und das Linien-Management-System</p>
+                    </div>
+                    
+                    <div class="phase-features">
+                        <!-- Feature Spalte 1 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">🚌 Busse</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Bus-Haltestellen platzieren</span>
+                                </li>
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Buslinien erstellen</span>
+                                </li>
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Bustypen & Kapazitäten</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Expressbusse</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Feature Spalte 2 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">🚋 Straßenbahn</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Schienen verlegen</span>
+                                </li>
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Straßenbahn-Haltestellen</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Weichen & Kreuzungen</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Verschiedene Wagentypen</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Feature Spalte 3 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">🚇 U-Bahn</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Tunnel-Bau</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">U-Bahn-Stationen</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Liniennetz-Verbindungen</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Tiefbau-Kosten</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Feature Spalte 4 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">📋 Linien-Management</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Linienfarben wählen</span>
+                                </li>
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Fahrplan-Editor</span>
+                                </li>
+                                <li class="feature-item wip">
+                                    <span class="feature-check">◐</span>
+                                    <span class="feature-name">Taktzeiten einstellen</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Linien-Statistiken</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== PHASE 3 ========== -->
+                <div class="roadmap-phase" data-phase="3">
+                    <div class="phase-header">
+                        <div class="phase-number">Phase 3</div>
+                        <h2 class="phase-title">Wirtschaft & Fahrgäste</h2>
+                        <span class="phase-status phase-planned">Geplant</span>
+                        <p class="phase-description">Wirtschaftssimulation mit Einnahmen, Ausgaben und Fahrgast-KI</p>
+                    </div>
+                    
+                    <div class="phase-features">
+                        <!-- Feature Spalte 1 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">💰 Finanzen</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Ticketpreise festlegen</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Betriebskosten</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Kredite & Investitionen</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Finanzberichte</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Feature Spalte 2 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">👥 Fahrgäste</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Fahrgast-Simulation</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Nachfrage-Analyse</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Zufriedenheits-System</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Pendler-Routen</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Feature Spalte 3 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">📈 Statistiken</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Fahrgastzahlen-Diagramme</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Auslastungs-Heatmap</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Gewinn/Verlust pro Linie</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Jahresberichte</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== PHASE 4 ========== -->
+                <div class="roadmap-phase" data-phase="4">
+                    <div class="phase-header">
+                        <div class="phase-number">Phase 4</div>
+                        <h2 class="phase-title">Erweiterungen & Polishing</h2>
+                        <span class="phase-status phase-planned">Geplant</span>
+                        <p class="phase-description">Zusätzliche Features, Feinschliff und Community-Wünsche</p>
+                    </div>
+                    
+                    <div class="phase-features">
+                        <!-- Feature Spalte 1 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">🏗️ Infrastruktur</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Bahnhöfe & Terminals</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Park & Ride</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Betriebshöfe</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Wartung & Reparatur</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Feature Spalte 2 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">🚄 Weitere Verkehrsmittel</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">S-Bahn</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Fähren</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Seilbahnen</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Elektrobusse</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Feature Spalte 3 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">🎨 Anpassung</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Fahrzeug-Skins</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Eigene Städte importieren</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Sandbox-Modus</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Achievements</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Feature Spalte 4 -->
+                        <div class="feature-column">
+                            <h3 class="column-title">🌐 Community</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Netzwerke teilen</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Bestenlisten</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Herausforderungen</span>
+                                </li>
+                                <li class="feature-item planned">
+                                    <span class="feature-check">○</span>
+                                    <span class="feature-name">Multiplayer (Zukunft)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================
+             CTA SECTION
+             ============================================ -->
+        <section class="roadmap-cta">
+            <div class="container">
+                <h2>Lust bekommen?</h2>
+                <p>Probiere TransitBuilder jetzt aus und gestalte dein eigenes ÖPNV-Netz!</p>
+                <a href="../game/index.html" class="btn btn-primary btn-large">
+                    <span class="btn-icon">🚀</span>
+                    Zum Spiel
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <span class="logo-icon">🚇</span>
+                    <span class="logo-text">TransitBuilder</span>
+                </div>
+                <p class="footer-desc">
+                    Ein browser-basiertes Aufbauspiel, in dem du dein eigenes ÖPNV-Netz auf realen Stadtplänen errichtest.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="../impressum.html">Impressum</a></li>
+                    <li><a href="../datenschutz.html">Datenschutz</a></li>
+                    <li><a href="../roadmap/">Roadmap</a></li>
+                    <li><a href="../changelog/">Changelog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Community</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link"><span>GitHub</span></a>
+                    <a href="#" class="social-link"><span>Discord</span></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 TransitBuilder. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

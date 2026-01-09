@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransitBuilder - ÖPNV Aufbauspiel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ============================================
+         HEADER / NAVIGATION
+         ============================================ -->
+    <header class="header">
+        <div class="container header-content">
+            <!-- Logo / Spielname -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚇</span>
+                <span class="logo-text">TransitBuilder</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Menü öffnen">
+                <span class="hamburger"></span>
+            </button>
+            
+            <!-- Navigation -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="/roadmap/" class="nav-link">Roadmap</a></li>
+                    <li><a href="/changelog/" class="nav-link">Changelog</a></li>
+                    <li><a href="game/" class="nav-link nav-btn">Jetzt spielen</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================================
+             HERO SECTION
+             ============================================ -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">TransitBuilder</h1>
+                <p class="hero-claim">Baue dein eigenes ÖPNV-Netz auf realen Karten</p>
+                <div class="hero-buttons">
+                    <a href="game/index.html" class="btn btn-primary">
+                        <span class="btn-icon">▶</span>
+                        Jetzt spielen
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <span class="btn-icon">↓</span>
+                        Mehr erfahren
+                    </a>
+                </div>
+            </div>
+            <!-- Animierte Partikel / Deko -->
+            <div class="hero-particles">
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+            </div>
+        </section>
+
+        <!-- ============================================
+             FEATURE-VORSCHAU SECTION
+             ============================================ -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Features</h2>
+                <p class="section-subtitle">Entdecke die Möglichkeiten von TransitBuilder</p>
+                
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🗺️</div>
+                        <h3 class="feature-title">Echte Karten</h3>
+                        <p class="feature-desc">Baue auf realen Stadtplänen und erschließe echte Stadtgebiete mit deinem ÖPNV-Netz.</p>
+                        <span class="badge badge-done">Fertig</span>
+                    </div>
+                    
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🚌</div>
+                        <h3 class="feature-title">Verschiedene Verkehrsmittel</h3>
+                        <p class="feature-desc">Busse, Straßenbahnen, U-Bahnen und mehr – wähle das passende Verkehrsmittel für jede Strecke.</p>
+                        <span class="badge badge-planned">Geplant</span>
+                    </div>
+                    
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 class="feature-title">Wirtschaftssystem</h3>
+                        <p class="feature-desc">Verwalte Einnahmen, Ausgaben und investiere clever in den Ausbau deines Netzes.</p>
+                        <span class="badge badge-planned">Geplant</span>
+                    </div>
+                    
+                    <!-- Feature 4 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3 class="feature-title">Fahrgast-Simulation</h3>
+                        <p class="feature-desc">Beobachte, wie Fahrgäste deine Linien nutzen und optimiere den Takt für maximale Zufriedenheit.</p>
+                        <span class="badge badge-wip">Geplant</span>
+                    </div>
+                    
+                    <!-- Feature 5 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🏗️</div>
+                        <h3 class="feature-title">Stationsausbau</h3>
+                        <p class="feature-desc">Erweitere Haltestellen zu großen Umsteigeknoten mit Shops und Serviceeinrichtungen.</p>
+                        <span class="badge badge-planned">Geplant</span>
+                    </div>
+                    
+                    <!-- Feature 6 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h3 class="feature-title">Browser-basiert</h3>
+                        <p class="feature-desc">Spiele direkt im Browser – keine Installation nötig, überall verfügbar.</p>
+                        <span class="badge badge-done">Fertig</span>
+                    </div>
+                </div>
+                
+                <!-- Roadmap Link -->
+                <div class="features-cta">
+                    <p>Entdecke alle geplanten Features und den Entwicklungsfortschritt</p>
+                    <a href="/roadmap/" class="btn btn-secondary">
+                        <span class="btn-icon">📋</span>
+                        Zur kompletten Roadmap
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             VISUELLE SPIEL-VORSCHAU SECTION
+             ============================================ -->
+        <section class="preview">
+            <div class="container">
+                <h2 class="section-title">Spiel-Vorschau</h2>
+                <p class="section-subtitle">So sieht TransitBuilder in Aktion aus</p>
+                
+                <div class="preview-container">
+                    <!-- Mockup/Platzhalter für Screenshot -->
+                    <div class="preview-mockup">
+                        <div class="mockup-header">
+                            <div class="mockup-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <span class="mockup-title">TransitBuilder - Gameplay</span>
+                        </div>
+                        <div class="mockup-content">
+                            <!-- Dummy Map Visualization -->
+                            <div class="dummy-map">
+                                <div class="map-grid">
+                                    <!-- Straßen -->
+                                    <div class="street street-h" style="top: 30%; left: 10%; width: 80%;"></div>
+                                    <div class="street street-h" style="top: 60%; left: 5%; width: 90%;"></div>
+                                    <div class="street street-v" style="left: 25%; top: 10%; height: 80%;"></div>
+                                    <div class="street street-v" style="left: 60%; top: 15%; height: 75%;"></div>
+                                    <div class="street street-v" style="left: 80%; top: 20%; height: 60%;"></div>
+                                    
+                                    <!-- Transit Lines -->
+                                    <svg class="transit-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                        <path class="transit-line line-blue" d="M10,30 Q25,30 25,50 T40,70 T70,60 T90,60" />
+                                        <path class="transit-line line-red" d="M15,80 Q30,80 40,50 T60,30 T85,35" />
+                                        <path class="transit-line line-green" d="M5,50 L30,50 Q45,50 50,65 T80,75" />
+                                    </svg>
+                                    
+                                    <!-- Stations -->
+                                    <div class="station" style="top: 28%; left: 23%;">
+                                        <span class="station-pulse"></span>
+                                    </div>
+                                    <div class="station" style="top: 58%; left: 38%;">
+                                        <span class="station-pulse"></span>
+                                    </div>
+                                    <div class="station" style="top: 68%; left: 68%;">
+                                        <span class="station-pulse"></span>
+                                    </div>
+                                    <div class="station station-hub" style="top: 48%; left: 50%;">
+                                        <span class="station-pulse"></span>
+                                    </div>
+                                </div>
+                                
+                                <!-- UI Overlay Elements -->
+                                <div class="map-ui">
+                                    <div class="ui-panel ui-stats">
+                                        <div class="stat">
+                                            <span class="stat-icon">💰</span>
+                                            <span class="stat-value">€ 1.250.000</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-icon">👥</span>
+                                            <span class="stat-value">15.420</span>
+                                        </div>
+                                    </div>
+                                    <div class="ui-panel ui-tools">
+                                        <button class="tool-btn active">🚌</button>
+                                        <button class="tool-btn">🚋</button>
+                                        <button class="tool-btn">🚇</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             CALL-TO-ACTION SECTION
+             ============================================ -->
+        <section class="cta">
+            <div class="container cta-content">
+                <h2 class="cta-title">Bereit zum Bauen?</h2>
+                <p class="cta-text">Starte jetzt und errichte dein eigenes Nahverkehrsimperium!</p>
+                <a href="game/" class="btn btn-primary btn-large">
+                    <span class="btn-icon">🚀</span>
+                    Zum Spiel
+                </a>
+            </div>
+            <!-- Dekorative Elemente -->
+            <div class="cta-decoration">
+                <span class="deco-line"></span>
+                <span class="deco-line"></span>
+                <span class="deco-line"></span>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <span class="logo-icon">🚇</span>
+                    <span class="logo-text">TransitBuilder</span>
+                </div>
+                <p class="footer-desc">
+                    Ein browser-basiertes Aufbauspiel, in dem du dein eigenes ÖPNV-Netz auf realen Stadtplänen errichtest. 
+                    Plane Linien, verwalte Ressourcen und sorge für zufriedene Fahrgäste.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                    <li><a href="/roadmap/">Roadmap</a></li>
+                    <li><a href="changelog.html">Changelog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Community</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Discord">
+                        <span>Discord</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 TransitBuilder. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

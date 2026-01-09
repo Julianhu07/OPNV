@@ -1,0 +1,64 @@
+{
+    "news": [
+        {
+            "id": 6,
+            "date": "2026-01-09",
+            "category": "devlog",
+            "title": "DevLog 3 – Erste Straßenbahnen im Spiel",
+            "excerpt": "Endlich ist es soweit! In diesem DevLog zeigen wir euch die ersten funktionierenden Straßenbahnen und das neue Schienen-System.",
+            "content": "Endlich ist es soweit! In diesem DevLog zeigen wir euch die ersten funktionierenden Straßenbahnen und das neue Schienen-System.\n\nWas ist neu:\n- Straßenbahnschienen können jetzt verlegt werden\n- Erste Straßenbahn-Modelle im Spiel\n- Weichen-Prototyp in Arbeit\n\nDas Schienensystem war eine echte Herausforderung, da wir die Kurven und Kreuzungen dynamisch berechnen müssen. Aber das Ergebnis kann sich sehen lassen!\n\nNächste Schritte:\n- Straßenbahn-Haltestellen\n- Fahrplan-Integration\n- Verschiedene Wagentypen",
+            "image": "",
+            "pinned": false
+        },
+        {
+            "id": 5,
+            "date": "2026-01-05",
+            "category": "update",
+            "title": "Update 0.3.1 – Bugfixes und Performance",
+            "excerpt": "Ein kleineres Update mit wichtigen Bugfixes und Verbesserungen der Kartenperformance.",
+            "content": "Ein kleineres Update mit wichtigen Bugfixes und Verbesserungen der Kartenperformance.\n\nBugfixes:\n- Haltestellen können jetzt wieder korrekt platziert werden\n- Kartennavigation reagiert schneller\n- Speicherproblem bei großen Netzen behoben\n\nPerformance:\n- Ladezeit der Karte um 40% reduziert\n- Flüssigeres Scrollen bei vielen Linien\n\nVielen Dank für euer Feedback!",
+            "image": "",
+            "pinned": false
+        },
+        {
+            "id": 4,
+            "date": "2025-12-27",
+            "category": "spotlight",
+            "title": "Spotlight: Berlin Alexanderplatz",
+            "excerpt": "Willkommen zum nächsten Spotlight für TransitBuilder. Heute schauen wir uns den Alexanderplatz in Berlin an.",
+            "content": "Willkommen zum nächsten Spotlight für TransitBuilder!\n\nHeute schauen wir uns den Alexanderplatz in Berlin an – einen der wichtigsten Verkehrsknotenpunkte der Stadt.\n\nDer Alexanderplatz bietet:\n- 3 U-Bahn-Linien\n- Zahlreiche Straßenbahn-Linien\n- S-Bahn-Anbindung\n- Busverbindungen in alle Richtungen\n\nIn TransitBuilder könnt ihr diesen Knotenpunkt nachbauen oder eure eigene Vision eines modernen Verkehrszentrums erschaffen.\n\nTipp: Nutzt die Layerfunktion, um U-Bahn und Straßenbahn getrennt zu planen!",
+            "image": "",
+            "pinned": false
+        },
+        {
+            "id": 3,
+            "date": "2025-12-20",
+            "category": "devlog",
+            "title": "DevLog 2 – Kleine Fixes im Überblick",
+            "excerpt": "DevLog 2 ist da. Diesmal schauen wir auf drei kleinere, aber wichtige Fixes, die aus eurem Feedback entstanden sind.",
+            "content": "DevLog 2 ist da!\n\nDiesmal schauen wir auf drei kleinere, aber wichtige Fixes, die aus eurem Feedback entstanden sind:\n\n1. Linienfarben-Picker\nDer Farbwähler für Linien war etwas umständlich. Jetzt könnt ihr aus vordefinierten Farben wählen oder eigene RGB-Werte eingeben.\n\n2. Haltestellen-Snap\nHaltestellen rasten jetzt automatisch an Straßen ein. Das macht die Platzierung viel intuitiver.\n\n3. Zoom-Memory\nDas Spiel merkt sich jetzt eure letzte Zoom-Stufe beim Speichern.\n\nWeiter so mit dem Feedback!",
+            "image": "",
+            "pinned": false
+        },
+        {
+            "id": 2,
+            "date": "2025-12-15",
+            "category": "announcement",
+            "title": "TransitBuilder jetzt öffentlich spielbar!",
+            "excerpt": "Es ist endlich soweit – TransitBuilder ist ab sofort für alle spielbar! Baut euer eigenes ÖPNV-Netz auf echten Karten.",
+            "content": "Es ist endlich soweit!\n\nTransitBuilder ist ab sofort für alle spielbar! 🎉\n\nNach monatelanger Entwicklung könnt ihr jetzt:\n- Auf echten OpenStreetMap-Karten bauen\n- Buslinien erstellen und verwalten\n- Haltestellen strategisch platzieren\n- Euer Netz speichern und laden\n\nDas ist erst der Anfang. In den kommenden Updates erwarten euch:\n- Straßenbahnen und U-Bahnen\n- Wirtschaftssystem\n- Fahrgast-Simulation\n\nViel Spaß beim Bauen!\n\n➡️ Jetzt spielen unter transitbuilder.game",
+            "image": "",
+            "pinned": true
+        },
+        {
+            "id": 1,
+            "date": "2025-12-10",
+            "category": "devlog",
+            "title": "DevLog 1 – Die Kartenintegration",
+            "excerpt": "Im ersten DevLog erklären wir, wie wir OpenStreetMap in TransitBuilder integriert haben.",
+            "content": "Willkommen zum ersten DevLog von TransitBuilder!\n\nHeute erklären wir, wie wir OpenStreetMap in TransitBuilder integriert haben.\n\nDie Herausforderungen:\n- Echtzeitige Kartenrendierung\n- Performance bei vielen Elementen\n- Interaktion mit Straßen und Gebäuden\n\nUnsere Lösung:\nWir nutzen Leaflet.js als Kartenbibliothek und haben eigene Layer für das Spielgeschehen entwickelt. Die Straßendaten werden gecacht, um Ladezeiten zu minimieren.\n\nDas Ergebnis: Ihr könnt jede Stadt der Welt als Spielfeld nutzen!\n\nMehr technische Details folgen in späteren DevLogs.",
+            "image": "",
+            "pinned": false
+        }
+    ]
+}

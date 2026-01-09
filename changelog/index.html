@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates - TransitBuilder</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="changelog.css">
+</head>
+<body>
+    <!-- ============================================
+         HEADER / NAVIGATION
+         ============================================ -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="../" class="logo">
+                <span class="logo-icon">🚇</span>
+                <span class="logo-text">TransitBuilder</span>
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-label="Menü öffnen">
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../" class="nav-link">Home</a></li>
+                    <li><a href="../roadmap/" class="nav-link">Roadmap</a></li>
+                    <li><a href="../changelog/" class="nav-link active">Changelog</a></li>
+                    <li><a href="../game/" class="nav-link nav-btn">Jetzt spielen</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="news-page">
+        <!-- ============================================
+             NEWS HERO
+             ============================================ -->
+        <section class="news-hero">
+            <div class="container">
+                <h1 class="page-title">News & Updates</h1>
+                <p class="page-subtitle">Bleib auf dem Laufenden über die Entwicklung von TransitBuilder</p>
+                
+                <!-- Filter / Kategorien -->
+                <div class="news-filters">
+                    <button class="filter-btn active" data-filter="all">Alle</button>
+                    <button class="filter-btn" data-filter="devlog">DevLog</button>
+                    <button class="filter-btn" data-filter="update">Updates</button>
+                    <button class="filter-btn" data-filter="spotlight">Spotlight</button>
+                    <button class="filter-btn" data-filter="announcement">Ankündigungen</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             NEWS FEED
+             ============================================ -->
+        <section class="news-feed">
+            <div class="container">               
+                <!-- News werden hier dynamisch eingefügt -->
+                <div id="news-container" class="news-list">
+                    <!-- News-Items werden per JavaScript geladen -->
+                    <div class="news-loading">
+                        <span class="loading-spinner"></span>
+                        <span>Lade News...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <span class="logo-icon">🚇</span>
+                    <span class="logo-text">TransitBuilder</span>
+                </div>
+                <p class="footer-desc">
+                    Ein browser-basiertes Aufbauspiel, in dem du dein eigenes ÖPNV-Netz auf realen Stadtplänen errichtest.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="../impressum.html">Impressum</a></li>
+                    <li><a href="../datenschutz.html">Datenschutz</a></li>
+                    <li><a href="../roadmap/">Roadmap</a></li>
+                    <li><a href="../changelog/">News</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Community</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link"><span>GitHub</span></a>
+                    <a href="#" class="social-link"><span>Discord</span></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 TransitBuilder. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="news.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
