@@ -4,7 +4,7 @@
             "id": 2,
             "date": "2026-01-10",
             "category": "Update",
-            "title": "Dashboard 0.0.2 Released",
+            "title": "0.0.2 Released",
             "excerpt": "Neues Hauptmenü",
             "content": "Neues Hauptmenü implementiert.\n\n- Spiel Stände laden & erstellen\n- Stadt Suche mit Postleitzahlen\n- Bestenliste Tab hinzugefügt (nur Platzhalter)\n- Changelog Verlinkung hinzugefügt\n- Freunde Tab hinzugefügt (nur Platzhalter)",
             "image": "bilder/v_0_0_2.png",
