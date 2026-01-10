@@ -127,12 +127,12 @@ document.addEventListener('DOMContentLoaded', function() {
             'spotlight': 'SPOTLIGHT',
             'announcement': 'ANKÜNDIGUNG'
         };
-        return labels[category] || 'NEUIGKEITEN';
+        return labels[category.toLowerCase()] || 'NEUIGKEITEN';
     }
     
     // Kategorie-Klasse
     function getCategoryClass(category) {
-        return `category-${category}`;
+        return `category-${category.toLowerCase()}`;
     }
     
     // News-Card HTML erstellen
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (filter === 'all') {
                 displayNews(allNews);
             } else {
-                const filtered = allNews.filter(news => news.category === filter);
+                const filtered = allNews.filter(news => news.category.toLowerCase() === filter.toLowerCase());
                 displayNews(filtered);
             }
         });

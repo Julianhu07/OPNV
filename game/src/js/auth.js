@@ -289,11 +289,11 @@ const Auth = {
      * Startet das Spiel nach erfolgreicher Authentifizierung
      */
     startGame() {
-        console.log('🎮 Starte Spiel...');
+        console.log('📊 Zeige Dashboard...');
         
-        // Karte initialisieren (falls noch nicht geschehen)
-        if (typeof initMap === 'function' && !map) {
-            initMap();
+        // Dashboard initialisieren und anzeigen
+        if (typeof Dashboard !== 'undefined') {
+            Dashboard.init();
         }
     },
     

@@ -1,0 +1,150 @@
+<!-- ============================================
+     DASHBOARD - Hauptmenü nach Login
+     ============================================ -->
+
+<!-- Dashboard Overlay -->
+<div id="dashboard-overlay" class="dashboard-overlay">
+    
+    <!-- Header -->
+    <header class="dashboard-header">
+        <!-- Logo -->
+        <div class="dashboard-logo">
+            <div class="dashboard-logo-icon">🚇</div>
+            <div class="dashboard-logo-text">Transit<span>Builder</span></div>
+        </div>
+        
+        <!-- Right Side -->
+        <div class="dashboard-header-right">
+            <!-- Coins -->
+            <div class="dashboard-coins">
+                <span class="icon">🪙</span>
+                <span class="amount" id="user-coins">0</span>
+            </div>
+            
+            <!-- Pro Button -->
+            <button class="dashboard-pro-btn">
+                <span>Hol dir</span>
+                <span class="badge">PRO</span>
+            </button>
+            
+            <!-- Settings -->
+            <button class="dashboard-icon-btn" id="settings-btn" title="Einstellungen">
+                ⚙️
+            </button>
+            
+            <!-- Profile -->
+            <button class="dashboard-profile-btn" id="profile-btn" title="Profil">
+                👤
+            </button>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="dashboard-content">
+        <div class="dashboard-grid">
+            
+            <!-- Deine Spiele -->
+            <div class="dashboard-card card-games">
+                <div class="dashboard-card-header">
+                    <div class="dashboard-card-icon">🎮</div>
+                    <h2 class="dashboard-card-title">Deine Spiele</h2>
+                </div>
+                <p class="dashboard-card-subtitle">Aktive Netzwerke verwalten</p>
+                <div class="card-games-counter" id="games-counter">0 / 3</div>
+                
+                <!-- Games List -->
+                <div class="games-list" id="games-list">
+                    <!-- Wird dynamisch befüllt -->
+                </div>
+                
+                <!-- Add Button -->
+                <button class="add-game-btn" id="add-game-btn" title="Neues Spiel erstellen">
+                    +
+                </button>
+            </div>
+            
+            <!-- Bestenliste -->
+            <div class="dashboard-card card-leaderboard">
+                <div class="dashboard-card-header">
+                    <div class="dashboard-card-icon">🏆</div>
+                    <h2 class="dashboard-card-title">Bestenliste</h2>
+                </div>
+                <p class="dashboard-card-subtitle">Messe dich mit Spielern in ganz Deutschland.</p>
+                
+                <!-- Decoration -->
+                <div class="leaderboard-decoration">
+                    <span class="leaderboard-medal">🥇</span>
+                    <span class="leaderboard-medal">🥈</span>
+                    <span class="leaderboard-medal">🥉</span>
+                </div>
+                <div class="leaderboard-trophy">🏆</div>
+                
+                <div class="dashboard-card-arrow">→</div>
+            </div>
+            
+            <!-- Freunde -->
+            <div class="dashboard-card card-friends">
+                <div class="dashboard-card-header">
+                    <div class="dashboard-card-icon">👥</div>
+                    <h2 class="dashboard-card-title">Freunde</h2>
+                </div>
+                <p class="dashboard-card-subtitle">Online Status und Verbindungen</p>
+                
+                <!-- Friends List -->
+                <div class="friends-list" id="friends-list">
+                    <p class="friends-empty">Noch keine Freunde hinzugefügt</p>
+                </div>
+                
+                <div class="dashboard-card-arrow">→</div>
+            </div>
+            
+            <!-- Changelog -->
+            <a href="../changelog/" class="dashboard-card card-changelog">
+                <div class="changelog-icons">
+                    <div class="changelog-icon red">🚀</div>
+                    <div class="changelog-icon orange">🔥</div>
+                    <div class="changelog-icon blue">💎</div>
+                </div>
+                <h2 class="changelog-title">
+                    Changelog
+                    <span class="arrow">→</span>
+                </h2>
+                <p class="changelog-subtitle">Neueste Updates & Features entdecken</p>
+            </a>
+            
+        </div>
+    </main>
+    
+</div>
+
+<!-- New Game Modal -->
+<div id="new-game-modal" class="new-game-modal">
+    <div class="new-game-modal-content">
+        <div class="new-game-modal-header">
+            <h3 class="new-game-modal-title">Neues Netzwerk</h3>
+            <button class="new-game-modal-close" id="close-modal-btn">✕</button>
+        </div>
+        
+        <form class="new-game-form" id="new-game-form">
+            <div class="new-game-input-group">
+                <label for="game-name">Name des Netzwerks</label>
+                <input type="text" id="game-name" placeholder="z.B. Mein ÖPNV Netzwerk" required>
+            </div>
+            
+            <div class="new-game-input-group">
+                <label for="game-city">Stadt oder Postleitzahl</label>
+                <div class="city-search-wrapper">
+                    <input type="text" id="game-city" placeholder="z.B. Berlin, 10115, Hamburg..." autocomplete="off" required>
+                    <div class="city-search-results" id="city-search-results"></div>
+                </div>
+                <input type="hidden" id="game-city-lat" value="">
+                <input type="hidden" id="game-city-lng" value="">
+                <input type="hidden" id="game-city-name" value="">
+            </div>
+            
+            <button type="submit" class="new-game-submit">
+                🚇 Netzwerk erstellen
+            </button>
+        </form>
+    </div>
+</div>

@@ -15,6 +15,9 @@
     
     <!-- Auth Styles -->
     <link rel="stylesheet" href="src/css/auth.css">
+    
+    <!-- Dashboard Styles -->
+    <link rel="stylesheet" href="src/css/dashboard.css">
 </head>
 <body>
     <!-- ============================================
@@ -22,6 +25,12 @@
          Wird dynamisch aus src/html/auth-overlay.html geladen
          ============================================ -->
     <div id="auth-container"></div>
+    
+    <!-- ============================================
+         DASHBOARD
+         Wird dynamisch aus src/html/dashboard.html geladen
+         ============================================ -->
+    <div id="dashboard-container"></div>
 
     <!-- ============================================
          HAUPTKARTE
@@ -44,6 +53,9 @@
     
     <!-- Karten-Initialisierung (wird erst nach Auth gestartet) -->
     <script src="src/js/map.js"></script>
+    
+    <!-- Dashboard-System -->
+    <script src="src/js/dashboard.js"></script>
     
     <!-- Auth-System -->
     <script src="src/js/auth.js"></script>
